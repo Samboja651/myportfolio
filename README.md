@@ -1,6 +1,6 @@
 # new-portfolio
 
-# 1. Requirement Gathering
+# Requirement Gathering
 Gather complete information about the following:
 
 ## 1. Programming Languages:
@@ -27,7 +27,7 @@ Grade B-\
 strogest subjects: Maths, Physics and English.
 
 Degree in Computer Science at Kisii University Kisii\
-Apr 2021 - Apr 2025\
+Sep 2021 - Apr 2025\
 I focus on what I can practically do, what I can make. Not the theory.
 
 Diploma in Computer Science at Kibo School Online\
