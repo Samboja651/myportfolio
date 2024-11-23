@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header></header>
@@ -11,25 +12,25 @@
         <section class="about">
             <h1>About</h1>
             <div>
-                <img src="/images/me.png" alt="A photo of Granton" class="myphoto">
-                <p>
-                    My name is Granton Kihiko Waribe. 
-                    I'm a computer science student at Kisii University. 
-                    My home residence is Naivasha. I'm a serious guy who loves to pay attention to detail and this enables me to deliver quality work. 
-                    Curiosity is one of my core identities and in the world of tech it has driven to great depths that I’m excited to share. 
-                    I love tech simply because I can use programming to transform my thoughts into something tangible.
-                </p>
+                <img src="/images/me.png" alt="A photo of Granton" id="myphoto">
+
+                <div style="display: flex; flex-direction: column;">
+                    <h3 style="margin-top: 60px;">Introduction</h3>
+                    <p>My name is Granton Kihiko Waribe. I'm a computer science student at Kisii University. <br> I love tech simply because I can use programming to transform my thoughts into something tangible.</p>
+                    <h3>Description</h3>
+                    <p>I'm a serious guy who loves to pay attention to detail and this enables me to deliver quality work. Curiosity is one of my core identities and in the world of tech it has driven me to great depths so lets dive in. </p>
+                </div>
             </div>
         </section>
         <section class="skills">
             <h1>Programming Languages</h1>
+            <p>I am profficient in</p>
             <div>
-                <p>I am profficient in</p>
-                <img src="/images/icons8-flask-128.png" alt="a flask icon from icons8">
-                <img src="/images/icons8-css3-144.png" alt="a css3 icon from icons8">
-                <img src="/images/icons8-database-80.png" width="128px" alt="a database icon from icons8">
-                <img src="/images/icons8-html-5-144.png" alt="a html5 icon from icons8">
                 <img src="/images/icons8-python-144.png" alt="a python3 icon from icons8">
+                <img src="/images/icons8-flask-128.png" alt="a flask icon from icons8">
+                <img src="/images/icons8-database-80.png" width="128px" alt="a database icon from icons8">
+                <img src="/images/icons8-css3-144.png" alt="a css3 icon from icons8">
+                <img src="/images/icons8-html-5-144.png" alt="a html5 icon from icons8">
             </div>
         </section>
         <section class="education">
@@ -80,19 +81,18 @@
         </section>
         <section class="interests">
             <h1>Interests</h1>
-            <p>
-                I love tech because using the skills I'm able to turn my imaginations into tangible ideas.
-                I'm interested in cloud computing, the idea that I can create super powerful vitual computers that run in the cloud, fires me up.
+            <p style="text-align: center; padding: 0 10%;">
+                I'm interested in cybersecurity because when AI replaces developers, I'll be the one hacking it, breaking it and creating work for developers and myself. <br>
+                I'm interested in cloud computing, the idea that I can create super powerful vitual computers that run in the cloud, fires me up. <br>
                 I'm interested in backend development because I love learning the logic of how things work.
-                I'm interested in cybersecurity because when AI replaces developers, I'll be the one hacking it, breaking it and creating work for developers and myself.
             </p>
         </section>
         <section class="projects">
             <h1>Projects</h1>
             <div class="project1">
                 <h2>Addiction Solver</h2>
-                <div>
-                    <img src="/images/addiction-solver-1.png" alt="image of addiction solver">
+                <div class="projectlayout">
+                    <img src="/images/addiction-solver-1.png" alt="image of addiction solver" class="addiction">
                     <p>
                         Is a web application that helps people recover from their addictions. Main features are: peer to peer forum, guidance from an AI Chatbot and educational resources.
                         Made with python, flask, html, css, bootstrap, js and sqlite3.
@@ -102,8 +102,8 @@
             </div>
             <div class="project2">
                 <h2>Chatbot</h2>
-                <div>
-                    <img src="/images/chatbot.png" alt="image of a robot">
+                <div class="projectlayout">
+                    <img src="/images/chatbot.png" alt="image of a robot" class="robot">
                     <p>
                         It's an AI powered chatbot where people with any addiction can get guidance on how to overcome them.
                         Made with Zapier.
@@ -113,8 +113,8 @@
             </div>
             <div class="project3">
                 <h2>Problema</h2>
-                <div>
-                    <img src="/images/Problema.png" alt="image of problema web app">
+                <div class="projectlayout">
+                    <img src="/images/Problema.png" alt="image of problema web app" class="problema">
                     <p>
                         A web app that keeps records of the technical problems and solutions provided on student forums. Future student cohorts refer to this app before asking for help on student forums.
                         Made with html, css and javascript.
@@ -124,10 +124,10 @@
             </div>
             <div class="project4">
                 <h2>My Book Shelf</h2>
-                <div>
-                    <img src="#" alt="image of an api book in relation to books">
-                    <p>
-                        An API that can perform CRUD operations on a book database.
+                <div class="projectlayout">
+                    <!-- <h4>API</h4> -->
+                    <p style="text-align: center;">
+                        An API that can perform CRUD operations on a book database data.
                         Made with Node.js, ExpressJS, css, EJS, prisma and sqlite3.
                         <span><a href="https://github.com/Samboja651/My-Book-Shelf">link</a></span>
                     </p>
@@ -135,8 +135,8 @@
             </div>
             <div class="project5">
                 <h2>Network Sniffer</h2>
-                <div>
-                    <img src="/images/network_sniffing.jpeg" alt="image of a dog sniffing a network device">
+                <div class="projectlayout">
+                    <img src="/images/network_sniffing.jpeg" alt="image of a dog sniffing a network device" class="sniffing">
                     <p>
                         A tool that analyzes packets in network tracffic. Decodes them and store the data in a database. I query the database to know who and what sites my network users visit frequently. This tool is for education purpose only, the project is private on github because it contains sensitive information.
                         Made with python and sqlite3.
@@ -147,15 +147,16 @@
         </section>
     </main>
     <footer>
+        <hr>
         <div>
-            <a href="https://github.com/Samboja651">
+            <a href="https://github.com/Samboja651" style="display: block;">
                 <img src="/images/icons8-github-100.png" width="96px" alt="a github icon from icons8">
             </a>
-            <a href="https://www.linkedin.com/in/grantonwaribe">
+            <a href="https://www.linkedin.com/in/grantonwaribe" style="display: block;">
                 <img src="/images/icons8-linkedin-96.png" width="100px" alt="a linkedin icon from icons8">
             </a>
+            <p>email: waribekihiko651@gmail.com <br> phone: +254769659301</p>
         </div>
-        <p>email: waribekihiko651@gmail.com <br> phone: +254769659301</p>
     </footer>
 </body>
 </html>

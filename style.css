@@ -1,0 +1,47 @@
+body{
+    margin: 0 10%;
+} 
+.about>div, .projectlayout{
+    display: flex;
+    gap: 50px;
+} 
+#myphoto{
+    width: 60%;
+    height: auto;
+}
+
+/* .projectlayout{
+    display: flex;
+    gap: 30px;
+} */
+.projects img{
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+section.skills>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project4>div h3{
+    border: 2px solid black;
+    padding: 5% 20%;
+    font-size: 400%;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+/* @media all (max-width: 500px){
+
+} */
