@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#abt">Home</a></li>
+                <li><a href="#sk">Skills</a></li>
+                <li><a href="#ed">Education</a></li>
+                <li><a href="#int">Interests</a></li>
+                <li><a href="#prjt">Projects</a></li>
+                <li><a href="#cnt">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section class="about">
+        <section class="about" id="abt">
             <h1>About</h1>
             <div>
                 <img src="./images/me.png" alt="A photo of Granton" id="myphoto">
 
-                <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: column;" class="intro">
                     <h3 style="margin-top: 60px;">Introduction</h3>
                     <p>My name is Granton Kihiko Waribe. I'm a computer science student at Kisii University. <br> I love tech simply because I can use programming to transform my thoughts into something tangible.</p>
                     <h3>Description</h3>
@@ -22,7 +38,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="sk">
             <h1>Programming Languages</h1>
             <!-- <p>I am profficient in</p> -->
             <div> 
@@ -32,8 +48,9 @@
                 <img src="./images/icons8-css3-144.png" alt="a css3 icon from icons8">
                 <img src="./images/icons8-html-5-144.png" alt="a html5 icon from icons8">
             </div>
+            <a href="https://icons8.com/" id="copyrights">icons from icons8.com</a>
         </section>
-        <section class="education">
+        <section class="education" id="ed">
             <h1>Education</h1>
             <div>
                 <details>
@@ -60,7 +77,7 @@
                         June 2023 - June 2024 <br>
                         GPA 2.7 <br>
                         Online <br>
-                        It's here I learn solid fundamentals in computer science. <br>
+                        It's here I learnt solid fundamentals in computer science. <br>
                         It's here I moved from general knowledge to basic programming and more into intermediate programming concepts. <br>
                         It's here I became a junior fullstack developer.
                     </p>
@@ -73,13 +90,13 @@
                         It's here I'll become a techpreneur. <br>
                         It's here I'll get support for my next business. <br>
                         It's here I'll get connections to job opportunities and internships. <br>
-                        It's here I'll win prizes from PLP events. <br>
+                        It's here I'll win prizes. <br>
                         It's here I'll grow my network.
                     </p>
                 </details>
             </div>
         </section>
-        <section class="interests">
+        <section class="interests" id="int">
             <h1>Interests</h1>
             <p style="text-align: center; padding: 0 10%;">
                 I'm interested in cybersecurity because when AI replaces developers, I'll be the one hacking it, breaking it and creating work for developers and myself. <br>
@@ -87,7 +104,7 @@
                 I'm interested in backend development because I love learning the logic of how things work.
             </p>
         </section>
-        <section class="projects">
+        <section class="projects" id="prjt">
             <h1>Projects</h1>
             <div class="project1">
                 <h2>Addiction Solver</h2>
@@ -95,8 +112,8 @@
                     <img src="./images/addiction-solver-1.png" alt="image of addiction solver" class="addiction">
                     <p>
                         Is a web application that helps people recover from their addictions. Main features are: peer to peer forum, guidance from an AI Chatbot and educational resources.
-                        Made with python, flask, html, css, bootstrap, js and sqlite3.
-                        <span><a href="https://addiction-solver.onrender.com/">link</a></span> 
+                        <span style="color: #FFB7C3;">Made with python, flask, html, css, bootstrap, js and sqlite3</span> <br>
+                        <span><a href="https://addiction-solver.onrender.com/" style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a></span> 
                     </p>
                 </div>
             </div>
@@ -106,8 +123,8 @@
                     <img src="./images/chatbot.png" alt="image of a robot" class="robot">
                     <p>
                         It's an AI powered chatbot where people with any addiction can get guidance on how to overcome them.
-                        Made with Zapier.
-                        <span><a href="https://samboja651.github.io/Chat-Bot/">link</a></span>
+                        <span style="color: #FFB7C3;">Made with Zapier.</span> <br>
+                        <span><a href="https://samboja651.github.io/Chat-Bot/" style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a></span>
                     </p>
                 </div>
             </div>
@@ -117,8 +134,8 @@
                     <img src="./images/Problema.png" alt="image of problema web app" class="problema">
                     <p>
                         A web app that keeps records of the technical problems and solutions provided on student forums. Future student cohorts refer to this app before asking for help on student forums.
-                        Made with html, css and javascript.
-                        <span><a href="https://kibo-web-dev-fundamentals-july-23.github.io/wdf-jul-23-final-project-tekcom/">link</a></span>
+                        <span style="color: #FFB7C3;">Made with html, css and javascript.</span> <br>
+                        <span><a href="https://kibo-web-dev-fundamentals-july-23.github.io/wdf-jul-23-final-project-tekcom/" style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a></span>
                     </p>
                 </div>
             </div>
@@ -127,9 +144,9 @@
                 <div class="projectlayout">
                     <!-- <h4>API</h4> -->
                     <p style="text-align: center;">
-                        An API that can perform CRUD operations on a book database data.
-                        Made with Node.js, ExpressJS, css, EJS, prisma and sqlite3.
-                        <span><a href="https://github.com/Samboja651/My-Book-Shelf">link</a></span>
+                        An API that can perform CRUD operations on a book database.
+                        <span style="color: #FFB7C3;">Made with Node.js, ExpressJS, css, EJS, prisma and sqlite3.</span>
+                        <span><a href="https://github.com/Samboja651/My-Book-Shelf" style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a></span>
                     </p>
                 </div>
             </div>
@@ -139,14 +156,14 @@
                     <img src="./images/network_sniffing.jpeg" alt="image of a dog sniffing a network device" class="sniffing">
                     <p>
                         A tool that analyzes packets in network tracffic. Decodes them and store the data in a database. I query the database to know who and what sites my network users visit frequently. This tool is for education purpose only, the project is private on github because it contains sensitive information.
-                        Made with python and sqlite3.
-                        <span><a href="https://github.com/Samboja651/network-sniffing.git">link</a></span>
+                        <span style="color: #FFB7C3;">Made with python and sqlite3.</span> <br>
+                        <span><a href="https://github.com/Samboja651/network-sniffing.git" style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a></span>
                     </p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="cnt">
         <hr>
         <div>
             <a href="https://github.com/Samboja651" style="display: block;">
