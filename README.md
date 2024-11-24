@@ -1,6 +1,6 @@
 # portfolio
 
-[portfolio link](https://samboja651.github.io/Portfolio/)
+[portfolio link](https://samboja651.github.io/myportfolio/)
 
 # Requirement Gathering
 Gather complete information about the following:
