@@ -42,6 +42,36 @@ footer>div{
     flex-wrap: wrap;
     padding: 30px 0px;
 }
-/* @media all (max-width: 500px){
-
-} */
+@media (max-width: 575px){
+    .projects img{
+        width: 100%;
+    }
+    #myphoto{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: -20%;
+    }
+    .about>div, .projectlayout{
+        display: flex;
+        /* gap: 50px; */
+        flex-wrap: wrap;
+    } 
+    body{
+        margin: 3%;
+    }
+}
+@media (min-width:576px) and (max-width: 700px){
+    .projects img{
+        width: 50%;
+    }
+    #myphoto{
+        width: 50%;
+    }
+    body{
+        margin: 3%;
+    }
+    .about>div, .projectlayout{
+       padding: 0px;
+       margin: 0px;
+    } 
+}
