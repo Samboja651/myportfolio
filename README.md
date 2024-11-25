@@ -2,7 +2,7 @@
 
 ## This is a portfolio telling my story in tech.
 
-live page: [https://github.com/Samboja651/myportfolio](https://github.com/Samboja651/myportfolio)
+live page: [https://samboja651.github.io/myportfolio/](https://samboja651.github.io/myportfolio/)
 
 ## Technologies & Tools
 - `HTML` for building a body skeleton of my webpage.
@@ -35,7 +35,7 @@ I noticed that using the right elements greatly improves the **webpage layout** 
 **In my layout I used** elements like `header, main, footer, section, nav, details & summary` and this gave a better skeleton of my webpage.
 
 ## Accessing the Portfolio
-[live portfolio webpage](https://github.com/Samboja651/myportfolio)
+[live portfolio webpage](https://samboja651.github.io/myportfolio/)
 
 ## Testing
 I shared the live link to a **total 15** friends and family via **whatsapp**.
