@@ -108,6 +108,9 @@ footer>div{
     color: skyblue;
     font-size: x-small;
 }
+form *{
+    color-scheme: light;
+}
 /* mediaquery to remove navbar */
 @media (max-width: 870px){
     header>nav{
@@ -132,6 +135,18 @@ footer>div{
     } 
     body{
         margin: 3%;
+    }
+}
+/* media query for a flexible form */
+@media (max-width: 458px){
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        width: fit-content;
+        align-self: center;
     }
 }
 /* medium screens- tablets */
